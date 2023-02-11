@@ -10,13 +10,13 @@ requestButton.addEventListener('click', () => {
   let errorMessage = '';
 
   if (!(1 <= pageNumber && pageNumber <= 10) || isNaN(pageNumber)) {
-    errorMessage += 'Page number outside the range from 1 to 10';
+    errorMessage += 'Номер страницы вне диапазона от 1 до 10';
   }
   if (!(1 <= limit && limit <= 10) || isNaN(limit)) {
     if (errorMessage) {
       errorMessage += ' and ';
     }
-    errorMessage += 'Limit outside the range from 1 to 10';
+    errorMessage += 'Лимит вне диапазона от 1 до 10';
   }
 
   if (errorMessage) {
