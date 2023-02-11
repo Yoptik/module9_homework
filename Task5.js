@@ -14,7 +14,7 @@ requestButton.addEventListener('click', () => {
   }
   if (!(1 <= limit && limit <= 10) || isNaN(limit)) {
     if (errorMessage) {
-      errorMessage += ' and ';
+      errorMessage += ' и ';
     }
     errorMessage += 'Лимит вне диапазона от 1 до 10';
   }
